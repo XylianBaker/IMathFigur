@@ -16,7 +16,7 @@ public interface IMathFigur {
     /**
      * Diese Methode setzt sinnvolle Standardwerte eines Objektes
      */
-    public void initialisieren();
+    public abstract void  initialisieren();
 
     /**
      * Diese Methode berechnet den Flächeninhalt einer Figur

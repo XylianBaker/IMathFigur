@@ -1,13 +1,8 @@
 package jkammellander;
 
 public abstract class MathFigur implements IMathFigur{
-    /**
-     * Diese Methode setzt sinnvolle Standardwerte eines Objektes
-     */
-    @Override
-    public void initialisieren() {
-
-    }
+    // Attribut
+    private double einheit;
 
     /**
      * Diese Methode setzt die Einheit einer Figur
@@ -16,7 +11,7 @@ public abstract class MathFigur implements IMathFigur{
      */
     @Override
     public void setEinheit(double einheit) {
-
+        this.einheit = einheit;
     }
 
     /**
@@ -26,7 +21,7 @@ public abstract class MathFigur implements IMathFigur{
      */
     @Override
     public double getEinheit() {
-        return 0;
+        return this.einheit;
     }
 
     /**
@@ -36,6 +31,6 @@ public abstract class MathFigur implements IMathFigur{
      */
     @Override
     public double umrechenFaktor() {
-        return 0;
+        return getEinheit();
     }
 }
