@@ -1,5 +1,11 @@
 package jkammellander;
 
+/**
+ * Diese Klasse erstellt ein Rechteck und dessen Methoden, wobei die Klasse von der
+ * Klasse MathFigur erbt.
+ * @author Jan Kammellander
+ * @version 2021-01-04
+ */
 public class Rechteck extends MathFigur{
     // Attribute
     private double a, b;
@@ -10,7 +16,7 @@ public class Rechteck extends MathFigur{
      * @param b Die Breite des Rechtecks
      */
     public Rechteck(double a, double b) {
-        if (laengenCheck()) {
+        if (!laengenCheck()) {
             this.a = a;
             this.b = b;
         }
