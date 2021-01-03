@@ -20,5 +20,5 @@ public interface IMathFigur {
 
     public abstract boolean laengenCheck();
 
-    pu
+    public abstract double umrechenFaktor();
 }
